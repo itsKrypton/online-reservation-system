@@ -1,0 +1,61 @@
+.root
+{
+    -fx-background-image: url("file:///C:/Users/Saurav/Desktop/Online_Reservation_System/OnlineReservationSystem/images/background.jpg");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: stretch;
+}
+
+.button
+{
+    -fx-font-size: 15px;
+    -fx-background-color: #0773e8;
+    -fx-text-fill: "white";
+    -fx-font-weight: bold;
+}
+
+#goBackButton
+{
+    -fx-font-weight: bold;
+    -fx-font-size: 22px;
+    -fx-text-fill: #0773e8
+}
+
+#submitButton
+{
+    -fx-font-size: 30px;
+    -fx-text-fill: "white";
+    -fx-font-weight: bold;
+}
+
+#newTicket
+{
+    -fx-text-fill: "white";
+    -fx-font-weight: bold;
+}
+
+.label
+{
+    -fx-text-fill: #0773e8;
+}
+
+.text-field
+{
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+}
+
+#trainNumber, #trainName, #origin, #destination, #class, #userId, #firstName, #lastName, #age, #gender
+{
+    -fx-font-size: 17px;
+    -fx-font-weight: bold;
+}
+
+.check-box
+{
+    -fx-font-size: 18px;
+}
+
+#scrollHBox
+{
+    -fx-spacing: 5px;
+}

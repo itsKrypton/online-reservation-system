@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="NewTicketController">
+   <top>
+      <AnchorPane prefHeight="84.0" prefWidth="1280.0" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0); -fx-background-color: #2e88e9;" BorderPane.alignment="CENTER">
+         <children>
+            <Label id="newTicket" alignment="CENTER" contentDisplay="CENTER" layoutY="11.0" prefHeight="84.0" prefWidth="1280.0" text="New Ticket" textFill="WHITE">
+               <font>
+                  <Font name="Nexa-Bold" size="70.0" />
+               </font>
+            </Label>
+            <ImageView blendMode="MULTIPLY" fitHeight="81.0" fitWidth="101.0" layoutX="1177.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/rail.png" />
+               </image>
+            </ImageView>
+            <Button id="goBackButton" fx:id="goBackButton" layoutX="20.0" layoutY="29.0" mnemonicParsing="false" onAction="#onGoBack" style="-fx-background-color: #FFFFFF; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0); -fx-cursor: hand;" text="Go Back" textFill="#2e88e9">
+               <font>
+                  <Font name="Nexa-Bold" size="22.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="203.0" layoutY="45.0" text="Train Details" textFill="#2e88e9">
+               <font>
+                  <Font name="Nexa-Bold" size="40.0" />
+               </font>
+            </Label>
+            <TextField id="trainNumber" fx:id="trainNumberField" layoutX="275.0" layoutY="125.0" onKeyReleased="#handleKeyReleased" prefHeight="36.0" prefWidth="261.0" promptText="Enter Train Number" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 10, 0, 0, 0);">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </TextField>
+            <Label layoutX="134.0" layoutY="187.0" text="Train Name" textFill="#2e88e9">
+               <font>
+                  <Font name="Nexa-Bold" size="21.0" />
+               </font>
+            </Label>
+            <TextField id="trainName" fx:id="trainNameField" editable="false" layoutX="275.0" layoutY="183.0" onMouseClicked="#setTrainName" prefHeight="36.0" prefWidth="261.0" promptText="Enter Train Name" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 10, 0, 0, 0);">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </TextField>
+            <Label layoutX="152.0" layoutY="245.0" text="Origin" textFill="#2e88e9">
+               <font>
+                  <Font name="Nexa-Bold" size="21.0" />
+               </font>
+            </Label>
+            <TextField id="origin" fx:id="originField" layoutX="275.0" layoutY="242.0" onKeyReleased="#handleKeyReleased" prefHeight="36.0" prefWidth="261.0" promptText="Enter Origin" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 10, 0, 0, 0);">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </TextField>
+            <Label layoutX="135.0" layoutY="304.0" text="Destination" textFill="#2e88e9">
+               <font>
+                  <Font name="Nexa-Bold" size="21.0" />
+               </font>
+            </Label>
+            <TextField id="destination" fx:id="destinationField" layoutX="275.0" layoutY="300.0" onKeyReleased="#handleKeyReleased" prefHeight="36.0" prefWidth="261.0" promptText="Enter Destination" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 10, 0, 0, 0);">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </TextField>
+            <Label layoutX="158.0" layoutY="362.0" text="Date" textFill="#2e88e9">
+               <font>
+                  <Font name="Nexa-Bold" size="21.0" />
+               </font>
+            </Label>
+            <Label layoutX="842.0" layoutY="45.0" text="User Details" textFill="#2e88e9">
+               <font>
+                  <Font name="Nexa-Bold" size="40.0" />
+               </font>
+            </Label>
+            <Label layoutX="790.0" layoutY="145.0" text="User ID" textFill="#2e88e9">
+               <font>
+                  <Font name="Nexa-Bold" size="21.0" />
+               </font>
+            </Label>
+            <TextField id="userId" fx:id="userIdField" editable="false" layoutX="900.0" layoutY="142.0" prefHeight="36.0" prefWidth="261.0" promptText="User ID" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 10, 0, 0, 0);">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </TextField>
+            <Label layoutX="771.0" layoutY="204.0" text="First Name" textFill="#2e88e9">
+               <font>
+                  <Font name="Nexa-Bold" size="21.0" />
+               </font>
+            </Label>
+            <TextField id="firstName" fx:id="firstNameField" layoutX="900.0" layoutY="201.0" onKeyReleased="#handleKeyReleased" prefHeight="36.0" prefWidth="261.0" promptText="Enter First Name" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 10, 0, 0, 0);">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </TextField>
+            <Label layoutX="771.0" layoutY="263.0" text="Last Name" textFill="#2e88e9">
+               <font>
+                  <Font name="Nexa-Bold" size="21.0" />
+               </font>
+            </Label>
+            <TextField id="lastName" fx:id="lastNameField" layoutX="900.0" layoutY="259.0" onKeyReleased="#handleKeyReleased" prefHeight="36.0" prefWidth="261.0" promptText="Enter Last Name" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 10, 0, 0, 0);">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </TextField>
+            <DatePicker id="date" fx:id="dateField" editable="false" layoutX="275.0" layoutY="360.0" prefHeight="34.0" prefWidth="261.0" promptText="Select Date" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 10, 0, 0, 0);" />
+            <Label layoutX="806.0" layoutY="321.0" text="Age" textFill="#2e88e9">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+            <TextField id="age" fx:id="ageField" layoutX="900.0" layoutY="318.0" onKeyReleased="#handleKeyReleased" prefHeight="36.0" prefWidth="261.0" promptText="Enter Age" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 10, 0, 0, 0);">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </TextField>
+            <Label layoutX="790.0" layoutY="379.0" text="Gender" textFill="#2e88e9">
+               <font>
+                  <Font name="Nexa-Bold" size="21.0" />
+               </font>
+            </Label>
+            <ComboBox id="gender" fx:id="genderField" layoutX="900.0" layoutY="376.0" prefHeight="35.0" prefWidth="261.0" promptText="Select Gender" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 10, 0, 0, 0);" visibleRowCount="3">
+                <items>
+                    <FXCollections fx:factory="observableArrayList">
+                       <String fx:value="Male" />
+                       <String fx:value="Female" />
+                       <String fx:value="Transgender" />
+                    </FXCollections>
+                </items>
+            </ComboBox>
+            <VBox layoutX="634.0" prefHeight="618.0" prefWidth="12.0" style="-fx-background-color: #2e88e9;" visible="false" />
+            <Label layoutX="123.0" layoutY="129.0" text="Train Number" textFill="#2e88e9">
+               <font>
+                  <Font name="Nexa-Bold" size="21.0" />
+               </font>
+            </Label>
+            <Button id="submitButton" fx:id="submitButton" layoutX="593.0" layoutY="510.0" mnemonicParsing="false" onAction="#onSubmit" style="-fx-background-color: #2e88e9; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0); -fx-cursor: hand;" text="Submit" textFill="WHITE">
+               <font>
+                  <Font name="Nexa-Bold" size="22.0" />
+               </font>
+            </Button>
+            <Label layoutX="156.0" layoutY="423.0" text="Class" textFill="#2e88e9">
+               <font>
+                  <Font name="Nexa-Bold" size="21.0" />
+               </font>
+            </Label>
+            <ComboBox id="class" fx:id="classField" layoutX="275.0" layoutY="420.0" onKeyReleased="#handleKeyReleased" prefHeight="35.0" prefWidth="261.0" promptText="Select Class" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 10, 0, 0, 0);" visibleRowCount="5">
+                  <items>
+                    <FXCollections fx:factory="observableArrayList">
+                        <String fx:value="1A" />
+                        <String fx:value="2A" />
+                        <String fx:value="CC" />
+                        <String fx:value="2S" />
+                        <String fx:value="SL" />
+                    </FXCollections>
+               </items>
+            </ComboBox>
+            <Label fx:id="PNRInfoLabel" alignment="CENTER" contentDisplay="CENTER" layoutY="571.0" prefHeight="26.0" prefWidth="1280.0" text="PNR generated" wrapText="true">
+               <font>
+                  <Font name="Nexa-Bold" size="20.0" />
+               </font>
+            </Label>
+            <CheckBox id="saveDetailsBox" fx:id="saveDetailsBox" layoutX="821.0" layoutY="442.0" mnemonicParsing="false" text="Save details for future bookings" />
+            <ScrollPane fx:id="scrollPane" layoutX="771.0" layoutY="97.0" prefHeight="38.0" prefWidth="389.0" />
+            <ImageView fx:id="passengerIcon" fitHeight="36.0" fitWidth="43.0" layoutX="719.0" layoutY="98.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/passenger2.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

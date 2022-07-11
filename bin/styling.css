@@ -1,0 +1,66 @@
+.root
+{
+    -fx-background-image: url("file:///C:/Users/Saurav/Desktop/Online_Reservation_System/OnlineReservationSystem/images/background.jpg");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: stretch;
+}
+
+.label
+{
+    -fx-text-fill: #0773e8;
+}
+
+#welcomeLabel, #topWelcomeLabel, #newTicket, #pnrEnquiry, #trainNumberLabel, #trainNameLabel, #classSeatLabel, #sourceLabel, #destinationLabel, #dateLabel, #firstNameLabel, #lastNameLabel, #ageGenderLabel
+{
+    -fx-text-fill: "white";
+    -fx-font-weight: bold;
+}
+
+#trainNumberLabelOP, #trainNameLabelOP, #classSeatLabelOP, #sourceLabelOP, #destinationLabelOP, #dateLabelOP, #firstNameLabelOP, #lastNameLabelOP, #ageGenderLabelOP
+{
+    -fx-text-fill: "black"
+}
+
+.text-field
+{
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+}
+
+.button, .button:default, .button:disabled
+{
+    -fx-font-size: 30px;
+    -fx-text-fill: "white";
+    -fx-font-weight: bold;
+}
+
+#cancelTicketButton
+{
+    -fx-font-size: 18px;
+}
+
+#logOutButton, #goBackButton
+{
+    -fx-font-size: 22px;
+    -fx-text-fill: #0773e8
+}
+
+#notAUser, #alreadyAUser
+{
+    -fx-text-fill: "black";
+}
+
+#signUp, #logIn, #searchButton
+{
+    -fx-text-fill: #0773e8;
+    -fx-border-width: 0cm;
+}
+
+.list-cell
+{
+	-fx-alignment: center;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: red ;
+}
+
